@@ -41,7 +41,7 @@ run:
 	@node app.js
 
 start: install build
-	@NODE_ENV=production nohup ./node_modules/.bin/pm2 start app.js -i 0 --name "mblog" --max-memory-restart 400M >> mblog.log 2>&1 &
+	@NODE_ENV=production nohup ./node_modules/.bin/pm2 PORT=5000 start app.js -i 0 --name "mblog" --max-memory-restart 400M >> mblog.log 2>&1 &
 
 restart: install build
 	@NODE_ENV=production nohup ./node_modules/.bin/pm2 restart "mblog" >> mblog.log 2>&1 &

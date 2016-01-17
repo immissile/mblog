@@ -165,8 +165,9 @@ if (config.debug) {
 }
 
 if (!module.parent) {
-  app.listen(config.port, function () {
-    logger.info('server listening at http://' + config.hostname + ':' + config.port);
+  var port = Number(process.env.PORT || config.port) || 3000;
+  app.listen(port, function () {
+    logger.info('server listening at http://' + config.hostname + ':' + port);
     logger.info('');
   });
 }
