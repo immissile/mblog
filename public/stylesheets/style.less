@@ -1,12 +1,23 @@
 @gray1: #e1e1e1;
 @gray2: #f6f6f6;
-@node_green: #80bd01;
+//@node_green: #80bd01;
+@node_green: #1f90c8;
 @node_black: #444444;
 
 /* base */
+html {
+  background-color: #fff;
+}
 body {
   background-color: @gray1;
   font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti !important;
+}
+
+.width-full {
+    width: 100%;
+}
+.width-full-f {
+    width: 100%!important;
 }
 
 #main {
@@ -183,7 +194,7 @@ a.light:hover {
 }
 
 .panel .header {
-  padding: 10px 10px;
+  padding: 15px 10px;
   background-color: @gray2;
   border-radius: 3px 3px 0 0;
 
@@ -241,7 +252,8 @@ a.light:hover {
 .cell {
   overflow: hidden;
   position: relative;
-  padding: 10px 0px 10px 10px;
+  //padding: 10px 0px 10px 10px;
+    padding: 20px 0px 20px 10px;
   font-size: 14px;
 }
 
@@ -1088,7 +1100,7 @@ textarea.editor {
   color: white;
   background-color: @node_green;
   &:hover {
-    background-color: #6ba44e;
+    background-color: @node_green;
   }
 }
 
@@ -1121,12 +1133,16 @@ textarea.editor {
 
 .topic-tab {
   margin: 0 10px;
-  color: @node_green;
+  color: #8E8E8E;
   &.current-tab {
     background-color: @node_green;
-    color: white;
+    //color: white;
     padding: 3px 4px;
-    border-radius: 3px;
+    //border-radius: 3px;
+    color: @node_green;
+    border-bottom: 2px @node_green solid;
+    background: #eee;
+      
   }
   &:hover {
     text-decoration: none;

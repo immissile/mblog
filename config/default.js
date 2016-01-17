@@ -21,7 +21,7 @@ module.exports = {
     // 右上角的导航区
     site_navs: [
         // 格式 [ path, title, [target=''] ]
-        ['/about', '关于']
+        //['/about', '关于']
     ],
     // cdn host，如 http://xxx.qiniudn.com
     site_static_host: '', // 静态文件存储域名

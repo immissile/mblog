@@ -11,11 +11,11 @@
       <div class='user_big_avatar'>
         <img src="<%= proxy(user.avatar_url) %>" class="user_avatar" title="<%= user.loginname %>"/>
       </div>
-      <a class='dark'><%= user.loginname %></a>
+      <a class='dark'><%= user.loginname %> / <%= user.score %>积分</a>
 
       <div class='user_profile'>
+        <br>
         <ul class='unstyled'>
-          <span class='big'><%= user.score %></span> 积分
           <% if (user.collect_topic_count) {%>
           <li>
             <a class='dark' href="/user/<%= user.loginname %>/collections" target='_blank'>

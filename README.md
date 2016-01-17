@@ -29,12 +29,6 @@ NodeJs + MongoDB 开发的多用户博客系统
 $ make test
 ```
 
-跑覆盖率测试
-
-```bash
-$ make test-cov
-```
-
 ## License
 
 MIT

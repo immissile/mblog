@@ -166,9 +166,7 @@ if (config.debug) {
 
 if (!module.parent) {
   app.listen(config.port, function () {
-    logger.info('Mblog listening on port', config.port);
-    logger.info('God bless love....');
-    logger.info('You can debug your app with http://' + config.hostname + ':' + config.port);
+    logger.info('server listening at http://' + config.hostname + ':' + config.port);
     logger.info('');
   });
 }

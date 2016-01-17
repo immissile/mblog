@@ -2,6 +2,7 @@ var models  = require('../models');
 var User    = models.User;
 var utility = require('utility');
 var uuid    = require('node-uuid');
+var config = require('config');
 
 /**
  * 根据用户名列表查找用户列表
