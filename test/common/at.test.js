@@ -30,7 +30,7 @@ describe('test/common/at.test.js', function () {
     @A-aZ-z0-9_
     @中文
       @begin_with_spaces @multi_in_oneline
-    Text More Text @around_text ![Pic](/public/images/cnode_icon_32.png)
+    Text More Text @around_text ![Pic](/public/images/logo_128.png)
     @end_with_no_space中文
     Text 中文@begin_with_no_spaces
     @end_with_no_space2@begin_with_no_spaces2
@@ -89,7 +89,7 @@ describe('test/common/at.test.js', function () {
 [@A-aZ-z0-9_](/user/A-aZ-z0-9_)
 @中文
   [@begin_with_spaces](/user/begin_with_spaces) [@multi_in_oneline](/user/multi_in_oneline)
-Text More Text [@around_text](/user/around_text) ![Pic](/public/images/cnode_icon_32.png)
+Text More Text [@around_text](/user/around_text) ![Pic](/public/images/logo_128.png)
 [@end_with_no_space](/user/end_with_no_space)中文
 Text 中文[@begin_with_no_spaces](/user/begin_with_no_spaces)
 [@end_with_no_space2](/user/end_with_no_space2)[@begin_with_no_spaces2](/user/begin_with_no_spaces2)

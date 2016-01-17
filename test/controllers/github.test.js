@@ -4,7 +4,7 @@ var mm = require('mm');
 var github = require('../../controllers/github');
 var Models = require('../../models');
 var User = Models.User;
-var config = require('../../config');
+var config = require('config');
 var support = require('../support/support');
 
 describe('test/controllers/github.test.js', function () {
@@ -134,7 +134,7 @@ describe('test/controllers/github.test.js', function () {
           if (err) {
             return done(err);
           }
-          res.text.should.match(/您 GitHub 账号的.*与之前在 CNodejs 注册的.*重复了/);
+          res.text.should.match(/您 GitHub 账号的.*与之前在 mblog 注册的.*重复了/);
           done();
         });
     });
