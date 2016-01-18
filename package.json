@@ -70,7 +70,11 @@
     },
     "scripts": {
         "test": "make test",
-        "start": "NODE_ENV=production PORT=5000 pm2 start app.js -i 0 --name www",
+        "build": "make build",
+        "start": "NODE_ENV=production PORT=5000 pm2 start app.js -i 0 --name mblog --max-memory-restart 400M >> mblog.log 2>&1 && pm2 list",
+        "stop": "pm2 stop mblog",
+        "delete": "pm2 stop mblog && pm2 delete mblog",
+        "reload": "pm2 reload mblog",
         "dev": "supervisor app.js"
     }
 }
